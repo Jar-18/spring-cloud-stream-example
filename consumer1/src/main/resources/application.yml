@@ -1,0 +1,18 @@
+server:
+  port: 8082
+spring:
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: mqTestDefault
+          group: firstGroup
+          content-type: application/json
+        input2:
+          destination: mqTestDefault2
+          group: secondGroup
+          content-type: application/json
+        output:
+          destination: mqTestDefault3
+          content-type: application/json
+            

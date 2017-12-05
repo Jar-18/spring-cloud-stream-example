@@ -1,0 +1,12 @@
+server:
+  port: 8081
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination: mqTestDefault
+          content-type: application/json
+        output2:
+          destination: mqTestDefault2
+          content-type: application/json
